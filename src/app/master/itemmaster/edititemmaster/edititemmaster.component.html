@@ -1,0 +1,112 @@
+<div class="page-header">
+    <h4 class="page-title">Edit Item</h4>
+    <button mat-button mat-dialog-close>&times;</button>
+</div>
+<div class="dialog-outer">
+    <mat-card class="deatils-card">
+        <h3>Product Information</h3>
+        <div class="form-outer">
+            <form action="">
+                <div class="form-col">
+                    <label for="">Barcode</label>
+                    <input type="text" matInput placeholder="Barcode">
+                </div>
+                <div class="form-col">
+                    <label for="">Code</label>
+                    <input type="text" matInput placeholder="Code">
+                </div>
+                <div class="form-col">
+                    <label for="">Brand</label>
+                    <input type="text" matInput placeholder="Brand">
+                </div>
+                <div class="form-col">
+                    <label for="">Name</label>
+                    <input type="text" matInput placeholder="Name">
+                </div>
+                <div class="form-col">
+                    <label for="">Description</label>
+                    <input type="text" matInput placeholder="Description">
+                </div>
+                <div class="form-col">
+                    <label for="">U.O.M</label>
+                    <input type="text" matInput placeholder="U.O.M">
+                </div>
+                <div class="form-col">
+                    <label for="">Supiler</label>
+                    <input type="text" matInput placeholder="Supiler">
+                </div>
+                <div class="form-col">
+                    <label for="">VAT</label>
+                    <input type="text" matInput placeholder="VAT">
+                </div>
+            </form>
+        </div>
+    </mat-card>
+
+    <mat-card class="deatils-card">
+        <h3>General Information</h3>
+        <div class="form-outer">
+            <form action="">
+                <div class="form-col">
+                    <label for="">Department</label>
+                    <input type="text" matInput placeholder="Please Enter Branch">
+                </div>
+                <div class="form-col">
+                    <label for="">Category</label>
+                    <input type="text" matInput placeholder="Category">
+                </div>
+                <div class="form-col">
+                    <label for="">Sub Category</label>
+                    <input type="text" matInput placeholder="Department">
+                </div>
+                <div class="form-col">
+                    <label for="">Type</label>
+                    <input type="text" matInput placeholder="Type">
+                </div>
+                <div class="form-col">
+                    <label for="">Cost</label>
+                    <input type="text" matInput placeholder="Cost">
+                </div>
+                <div class="form-col">
+                    <label for="">Net Cost</label>
+                    <input type="text" matInput placeholder="Net Cost">
+                </div>
+                <div class="form-col">
+                    <label for="">Duty Type</label>
+                    <input type="text" matInput placeholder="Duty Type">
+                </div>
+                <div class="form-col">
+                    <label for="">Scale Type</label>
+                    <input type="text" matInput placeholder="Scale Type">
+                </div>
+                <div class="form-col">
+                    <label for="">Reorder</label>
+                    <input type="text" matInput placeholder="Reorder">
+                </div>
+            </form>
+        </div>
+    </mat-card>
+
+    <mat-card class="deatils-card deatils-cardsec">
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Cost">
+                <app-cost></app-cost>
+            </mat-tab>
+            <mat-tab label="Price">
+                <app-price></app-price>
+            </mat-tab>
+            <mat-tab label="Pack">
+                <app-pack></app-pack>
+            </mat-tab>
+            <mat-tab label="Miscellaneous">
+                <app-miscellaneous></app-miscellaneous>
+            </mat-tab>
+            <mat-tab label="Image">
+                <app-image></app-image>
+            </mat-tab>
+            <mat-tab label="Description">
+                <app-description></app-description>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

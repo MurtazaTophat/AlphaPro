@@ -44,7 +44,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color:#5A28AB;
+  background-color:#387EDE;
   width: 3px;
   border-radius: 5px;
 }
@@ -53,4 +53,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 }
 th.mat-header-cell .mat-checkbox-frame{
   border-color: #fff;
+}
+.mat-dialog-container{
+  padding: 0 !important;
+}
+.mat-tab-group.mat-primary .mat-ink-bar{
+  background-color: #387EDE;
 }
