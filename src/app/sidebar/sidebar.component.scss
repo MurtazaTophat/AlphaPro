@@ -1,0 +1,51 @@
+@import "../master/itemmaster/itemmaster.component.scss";
+.sidenav{
+    width: 13%;
+    height: 100vh;
+    background-color: $secondry-color;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.sidenav-content{
+    height: 100%;
+    .sidebar-logo{
+        padding: 5px 15px;
+        background: $bg-overlay-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $font-color;
+        margin-bottom: 15px;
+        span{
+            font-size: 17px;
+        }
+    }
+    p{
+        margin-bottom: 0;
+        a{
+            color: $font-color;
+            text-decoration: unset;
+            display: flex;
+            align-items: center;
+            padding: 8px 20px;
+            margin-bottom: 8px;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+    .menu-option{
+        background-color: $bg-overlay-color;
+        padding: 10px 30px;
+        span{
+            width: 100%;
+            display: inline-block;
+            font-size: 15px;
+            line-height: 28px;
+            a{
+                color: #fff;
+                text-decoration: unset;
+            }
+        }
+    }
+}

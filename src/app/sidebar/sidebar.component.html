@@ -1,0 +1,27 @@
+<mat-drawer  opened #drawer class="sidenav" mode="side">
+    <div class="sidenav-content">
+      <div class="sidebar-logo">
+        <span>AlphaPro</span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <p (click)="ToggelsecOpen()"><a><span>Masters</span></a></p>
+        <div class="menu-option" [ngClass]="[Flag ? 'd-block': 'd-none']">
+            <span><a routerLink="/">Item Master</a></span>
+            <span><a routerLink="/department">Department</a></span>
+            <span><a routerLink="/category">Category</a></span>
+            <span><a routerLink="/brand">Brand</a></span>
+            <span><a routerLink="/uom">UOM</a></span>
+        </div>
+      <p><a routerLink="/openings"><span>Openings</span></a></p>
+      <p><a routerLink="/sale"><span>Sale</span></a></p>
+      <p><a routerLink="/inventory"><span>Inventory</span></a></p>
+      <p><a routerLink="/accounts"><span>Accounts</span></a></p>
+      <p><a routerLink="/reports"><span>Reports</span></a></p>
+      <p><a routerLink="/utility"><span>Utility</span></a></p>
+      <p><a routerLink="/data"><span>Data</span></a></p>
+      <p><a routerLink="/settings"><span>Settings</span></a></p>
+      <p><a routerLink="/about"><span>About</span></a></p>
+    </div>
+  </mat-drawer>

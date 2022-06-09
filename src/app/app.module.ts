@@ -16,6 +16,11 @@ import { AddpackingComponent } from './master/itemmaster/additemmaster/pack/addp
 import { MiscellaneousComponent } from './master/itemmaster/additemmaster/miscellaneous/miscellaneous.component';
 import { ImageComponent } from './master/itemmaster/additemmaster/image/image.component';
 import { DescriptionComponent } from './master/itemmaster/additemmaster/description/description.component';
+import { EditpackingComponent } from './master/itemmaster/additemmaster/pack/editpacking/editpacking.component';
+import { DepartmentComponent } from './master/department/department.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { AdddepartmentComponent } from './master/department/adddepartment/adddepartment.component';
+import { EditdepartmentComponent } from './master/department/editdepartment/editdepartment.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { DescriptionComponent } from './master/itemmaster/additemmaster/descript
     AddpackingComponent,
     MiscellaneousComponent,
     ImageComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    EditpackingComponent,
+    DepartmentComponent,
+    SidebarComponent,
+    AdddepartmentComponent,
+    EditdepartmentComponent
   ],
   imports: [
     BrowserModule,

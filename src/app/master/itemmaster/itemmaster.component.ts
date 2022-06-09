@@ -44,13 +44,6 @@ export class ItemmasterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public Flag:Boolean=false;
-  public ToggelOpen():void{
-    this.Flag=!this.Flag
-  }
-  public ToggelsecOpen():void{
-    this.Flag=!this.Flag
-  }
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {

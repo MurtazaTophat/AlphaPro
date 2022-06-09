@@ -60,3 +60,10 @@ th.mat-header-cell .mat-checkbox-frame{
 .mat-tab-group.mat-primary .mat-ink-bar{
   background-color: #387EDE;
 }
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
+  border-left: unset !important;
+  border-right: unset !important;
+}
+.main-layout{
+  margin-left: 13%;
+}

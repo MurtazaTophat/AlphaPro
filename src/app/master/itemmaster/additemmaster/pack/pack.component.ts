@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddpackingComponent } from './addpacking/addpacking.component';
+import { EditpackingComponent } from './editpacking/editpacking.component';
+
 export interface PeriodicElement {
   ProductName: string;
   ProductDescription: string;
@@ -24,7 +28,18 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class PackComponent implements OnInit {
   displayedColumns = ['ProductName', 'ProductDescription', 'EmployeName', 'TimeReq', 'cost', 'NetCost', 'Price', 'VatAmt', 'Action'];
   dataSource = ELEMENT_DATA;
-  constructor() { }
+  
+  constructor(public dialog: MatDialog) { }
+  addpackingDialog() {
+    this.dialog.open(AddpackingComponent,{
+      width: '800px'
+    });
+  }
+  editpackingDialog() {
+    this.dialog.open(EditpackingComponent,{
+      width: '800px'
+    });
+  }
 
   ngOnInit(): void {
   }
