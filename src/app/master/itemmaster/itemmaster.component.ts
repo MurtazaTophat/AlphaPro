@@ -12,24 +12,25 @@ export interface PeriodicElement {
   symbol: string;
   product: string;
   description: string;
+  action: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
-  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
+  {position: 'Product Categories', name: 'Bags & Baskets', weight: '-', symbol: '74427001508', product: '004-Pedrini Poul Try', description:'-', action: 'Delete'},
 ];
 
 @Component({
@@ -38,7 +39,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./itemmaster.component.scss']
 })
 export class ItemmasterComponent implements OnInit {
-  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'product', 'description'];
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'product', 'description', 'action'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 
