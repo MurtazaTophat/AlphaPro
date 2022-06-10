@@ -9,24 +9,25 @@ export interface PeriodicElement {
   name: string;
   position: string;
   weight: string;
+  action: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
-  {position: '-', name: 'Product Categories', weight: 'Enabled'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
+  {position: '-', name: 'Product Categories', weight: 'Enabled', action: 'Delete'},
 ];
 
 @Component({
@@ -35,7 +36,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./department.component.scss']
 })
 export class DepartmentComponent implements OnInit {
-  displayedColumns: string[] = ['select', 'position', 'name', 'weight'];
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'action'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
   selection = new SelectionModel<PeriodicElement>(true, []);
 

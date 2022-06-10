@@ -21,6 +21,11 @@ import { DepartmentComponent } from './master/department/department.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AdddepartmentComponent } from './master/department/adddepartment/adddepartment.component';
 import { EditdepartmentComponent } from './master/department/editdepartment/editdepartment.component';
+import { CategoryComponent } from './master/category/category.component';
+import { AddcategoryComponent } from './master/category/addcategory/addcategory.component';
+import { EditcategoryComponent } from './master/category/editcategory/editcategory.component';
+import { BrandComponent } from './master/brand/brand.component';
+import { AddbrandComponent } from './master/brand/addbrand/addbrand.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { EditdepartmentComponent } from './master/department/editdepartment/edit
     DepartmentComponent,
     SidebarComponent,
     AdddepartmentComponent,
-    EditdepartmentComponent
+    EditdepartmentComponent,
+    CategoryComponent,
+    AddcategoryComponent,
+    EditcategoryComponent,
+    BrandComponent,
+    AddbrandComponent
   ],
   imports: [
     BrowserModule,
