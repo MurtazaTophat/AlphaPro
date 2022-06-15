@@ -1,0 +1,32 @@
+<div class="table-outer">
+    <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="ProductName">
+        <th mat-header-cell *matHeaderCellDef> Exc. Duty Type </th>
+        <td mat-cell *matCellDef="let element"> {{element.ProductName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="ProductDescription">
+        <th mat-header-cell *matHeaderCellDef> Amount </th>
+        <td mat-cell *matCellDef="let element"> {{element.ProductDescription}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="EmployeName">
+        <th mat-header-cell *matHeaderCellDef class="text-center"> Vat Amt </th>
+        <td mat-cell *matCellDef="let element" class="text-center"> {{element.EmployeName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="TimeReq">
+        <th mat-header-cell *matHeaderCellDef class="text-center"> Description </th>
+        <td mat-cell *matCellDef="let element" class="text-center"> {{element.TimeReq}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Action">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Action </th>
+      <td mat-cell *matCellDef="let element" class="text-center action-delete"> <mat-icon>delete</mat-icon> </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

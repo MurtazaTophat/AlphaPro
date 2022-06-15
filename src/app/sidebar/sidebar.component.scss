@@ -2,7 +2,7 @@
 .sidenav{
     width: 13%;
     height: 100vh;
-    background-color: $secondry-color;
+    background-color: #fff;
     overflow: hidden;
     overflow-y: auto;
 }
@@ -23,7 +23,7 @@
     p{
         margin-bottom: 0;
         a{
-            color: $font-color;
+            color: #010001;
             text-decoration: unset;
             display: flex;
             align-items: center;

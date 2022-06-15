@@ -71,7 +71,7 @@
 
                     <ng-container matColumnDef="action">
                       <th mat-header-cell *matHeaderCellDef> Action </th>
-                      <td mat-cell *matCellDef="let element" class="action-delete"> {{element.action}} </td>
+                      <td mat-cell *matCellDef="let element" class="action-delete"> <mat-icon>delete</mat-icon> </td>
                     </ng-container>
 
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

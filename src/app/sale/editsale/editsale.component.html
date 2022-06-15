@@ -1,0 +1,60 @@
+<div class="page-header">
+    <h4 class="page-title">Edit Sale</h4>
+    <button mat-button mat-dialog-close>&times;</button>
+</div>
+<div class="dialog-outer">
+    <mat-card class="deatils-card" style="width: 100%;">
+        <h3>Sale</h3>
+        <div class="form-outer">
+            <form action="">
+                <div class="form-col">
+                    <label for="">Branch</label>
+                    <input type="text" matInput placeholder="Branch">
+                </div>
+                <div class="form-col">
+                    <label for="">Type</label>
+                    <input type="text" matInput placeholder="Type">
+                </div>
+                <div class="form-col">
+                    <label for="">Supplier</label>
+                    <input type="text" matInput placeholder="Supplier">
+                </div>
+                <div class="form-col">
+                    <label for="">Description</label>
+                    <input type="text" matInput placeholder="Description">
+                </div>
+                <div class="form-col">
+                    <label for="">Pay Terms</label>
+                    <input type="text" matInput placeholder="Pay Terms">
+                </div>
+                <div class="form-col">
+                    <label for="">Region</label>
+                    <input type="text" matInput placeholder="Region">
+                </div>
+                <div class="form-col">
+                    <label for="">Invoice Number</label>
+                    <input type="text" matInput placeholder="Invoice Number">
+                </div>
+                <div class="form-col">
+                    <label for="">LPO No.</label>
+                    <input type="text" matInput placeholder="LPO No.">
+                </div>
+                <div class="form-col">
+                    <label for="">Voucher No.</label>
+                    <input type="text" matInput placeholder="Voucher No.">
+                </div>
+            </form>
+        </div>
+    </mat-card>
+
+    <mat-card class="deatils-card deatils-cardsec">
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Item">
+                <app-purchaseitem></app-purchaseitem>
+            </mat-tab>
+            <mat-tab label="Ledgers">
+                <app-purchaseledgers></app-purchaseledgers>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

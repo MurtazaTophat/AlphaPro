@@ -36,7 +36,7 @@ $AlphaPro-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #E8E8F0 !important;overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e7eaef !important;overflow: hidden;}
 
 ::-webkit-scrollbar {
   background-color: rgba(180, 181, 184, 0.6);
@@ -44,7 +44,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color:#387EDE;
+  background-color:#02A5A6;
   width: 3px;
   border-radius: 5px;
 }
@@ -58,7 +58,7 @@ th.mat-header-cell .mat-checkbox-frame{
   padding: 0 !important;
 }
 .mat-tab-group.mat-primary .mat-ink-bar{
-  background-color: #387EDE;
+  background-color: #02A5A6;
 }
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
   border-left: unset !important;
@@ -67,3 +67,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
 .main-layout{
   margin-left: 13%;
 }
+
+
+

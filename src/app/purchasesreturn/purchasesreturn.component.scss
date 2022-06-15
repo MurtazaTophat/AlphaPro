@@ -1,0 +1,10 @@
+@import "../master/itemmaster/itemmaster.component.scss";
+.content-data{
+    width: 100%;
+}
+.data-addon{
+    height: auto;
+}
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell{
+    min-width: 160px;
+}
